@@ -12,5 +12,5 @@ set /p "wh=webhook url: "
 set /p "msg=message: "
 
 curl -X POST -H "Content-Type: application/json" -d "{\"content\": \"%msg%\"}" %wh%
-echo sent messages
+echo sent message
 goto main
